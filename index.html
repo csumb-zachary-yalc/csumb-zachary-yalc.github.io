@@ -1,94 +1,73 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="styles.css">
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
-   <title>Lab 1</title>
+   <title> freeCodeCamp Survey </title>
 </head>
-  <main>
 <body>
-   
-<style>
-  h1 {
-    font-size: 8vw;
-    text-align: center;
-    height: 100px:
-    margin: 0;
-    color: #hotpink;
-    background-color: #lightpink;
-    border: 7px solid white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 0;
-    margin-top: 0;
-    border-radius: 15px;
-  }
-  
-   main {
-      background-color: #ffb6c1;
-   }
-     img {
-    border-radius: 30px;
-    border: 3px double black;
-    max-width: 100%;
-    height: auto;
-  }
+  <h1 id="title"> Pitbull Culling </h1>
 
-</style>
-   <h1>Cherry Blossom Facts</h1>
-   <h2>Blossom with knowledge</h4>
-   <p>Look at this!</p>
-   <img src="landscape.jpg">
-   <label> It's so pretty!</label>
-   <h2>Click <a href="https://www.google.com/search?q=cherry+blossoms&rlz=1C5CHFA_enUS860US860&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiw1d_lsvj8AhX2JTQIHVwyAzMQ_AUoAXoECAEQAw&biw=1200&bih=618&dpr=1"> here </a> to view more Cherry Blossoms.</h4>
-   <h3>Cherry Blossoms grow:</h5>
-   <ul>
-      <li>In Japan.</li>
-      <li>In my backyard.</li>
-      <li>Slowly, oftentimes.</li>
-  </ul>
-  <figure>
-      <img src="tree.jpg">
-      <figcaption> So pretty! </figcaption>
-  </figure>
-   <h3>Why you should love Cherry Blossom trees</h4>
-   <ol>
-      <li>They are the <strong>best</strong>.</li>
-      <li>They are pink.</li>
-      <li>I like them.</li>
-   </ol>
-  <figure>
-   <img src="flower.jpg">
-   <footer>
-    <EM> <strong>Stunning!!</strong></EM>
-    </footer>
-   <strong><em>Mesmerizing!!</em> </strong>
-   <header>
-      <h1> Cherry Blossom Questionnaire! </h1>
-   </header>
-  </figure>
-  <fieldset>
-  <legend> Do you like cherry blossoms? </legend>
-    Yes <input type="checkbox"  name="answer" > <br>
-   No <input type="checkbox" name="answer2"> <br>
-</fieldset>
+  <p id="description">
+     Should we allow pitbulls to continue ravaging the toddler population?
+  </p>
+  
+  <form id="survey-form">
+    <label id="name-label">
+      Name<br>
+    <input id="name" type="text" required placeholder="Enter your name"> <p></p>
+    </label>
+      Email <br>
+    <label id="email-label">
+    <input id="email" type="email" required placeholder="Enter your email"> <br><p></p>
+    </label>
+      How many casualties have you seen at the hands of a pitbull? (National average is 3.4) <br>
+    <label id="number-label">
+    <input id="number" type="number" min="0" max="10" placeholder="0-10"> <br>
+    </label>
+  <p>
+    Which do you think has the most kills confirmed on toddlers? <br>
+    <select id="dropdown" name="killers">
+    <option> Puppies </option>
+    <option> Kittens </option>
+    <option> Nymphs/Faries </option>
+    <option> Pitbulls </option>
+<br>
+    </select>
 <fieldset>
-  <legend> Have you ever seen a japanese cherry tree? </legend>
-    Yes <input type="radio"  name="answer" > <br>
-   No <input type="radio" name="answer"> <br>
-    I dont know <input type="radio"  name="answer" > <br>
-</fieldset>
+  <legend>
+    Would you trust a pitbull around your vulnerable and mouthwatering toddler?
+    </legend>
+<input type="radio" id="radio1" name="input" value="Yes">
+<label for="radio1"> Yes </label>
+<br>
+<input type="radio" id="radio2" name="input" value="No">
+<label for="radio2"> No </label>
+<br>
+<input type="radio" id="radio3" name="input" value="Maybe">
+<label for="radio3"> Maybe </label>
+<br>
+  </fieldset>
+  <p></p>
   <fieldset>
-  <legend> How do cherry blossoms make you feel? </legend>
-    Good <input type="checkbox"  name="answer" > <br>
-    Bad <input type="checkbox"  name="answer" > <br>
-</fieldset>
-  <form action="cherry">
-    <br>
-    Share your favorite tree with us! <input type="textbox" name="treefav" placeholder="Enter URL">
-  <button> Submit </button>
+    <legend>
+      Please select which outcome you prefer.
+      </legend>
+    <input type="checkbox" id="checkbox1" name="checkbox" value="Live">
+    <label for="checkbox1"> No pitbulls, but babies are safe. </label> <br>
+    <input type="checkbox" id="checkbox2" name="checkbox" value="Die">
+    <label for="checkbox2"> Pitbulls remain, and innocent babies continue to be eaten. </label> <br>
+    </fieldset>
+
+<p>
+  If it helps to share a story about a deadly pitbull encounter, to ease the trauma, feel free to share.
+  </p>
+  <textarea id="trauma" name="textarea" rows="10" cols="50"> </textarea>
+  <p> </p>
+  Submit Results when complete.
+  <br>
+  <input type="submit" name="button" id="submit">
+  </form> 
 </body>
-  </main>
 </html>
